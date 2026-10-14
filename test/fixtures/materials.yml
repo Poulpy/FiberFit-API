@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  material_type: MyString
+  color: MyString
+  stock_quantity: 9.99
+  stock_unit: 9.99
+  length_per_unit_m: 9.99
+  yarn_weight_class: MyString
+
+two:
+  name: MyString
+  material_type: MyString
+  color: MyString
+  stock_quantity: 9.99
+  stock_unit: 9.99
+  length_per_unit_m: 9.99
+  yarn_weight_class: MyString
