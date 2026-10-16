@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+materials = [{
+  name: "soho",
+  material_type: "wool",
+  color: "pink",
+  stock_quantity: 1,
+  stock_unit: "skein",
+  length_per_unit_m: 1,
+  yarn_weight_class: "lace_0"
+}]
+
+Material.create(materials)
