@@ -1,19 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  material_type: MyString
-  color: MyString
-  stock_quantity: 9.99
-  stock_unit: 9.99
-  length_per_unit_m: 9.99
-  yarn_weight_class: MyString
+  name: Laine mérinos
+  supply_type: yarn
+  color: bleu
+  stock_quantity: 10.0
+  stock_unit: skein
+  length_per_unit_m: 100.0
+  yarn_weight_class: medium_4
 
 two:
-  name: MyString
-  material_type: MyString
-  color: MyString
-  stock_quantity: 9.99
-  stock_unit: 9.99
-  length_per_unit_m: 9.99
-  yarn_weight_class: MyString
+  name: Fil de coton
+  supply_type: crochet_thread
+  color: blanc
+  stock_quantity: 4.0
+  stock_unit: spool
+  length_per_unit_m: 250.0
+  yarn_weight_class: fine_2

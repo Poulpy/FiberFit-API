@@ -46,6 +46,6 @@ class MaterialsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def material_params
-      params.expect(material: [ :name, :material_type, :color, :stock_quantity, :stock_unit, :length_per_unit_m, :yarn_weight_class ])
+      params.expect(material: [ :name, :supply_type, :color, :stock_quantity, :stock_unit, :length_per_unit_m, :yarn_weight_class ])
     end
 end

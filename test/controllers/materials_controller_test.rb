@@ -12,7 +12,7 @@ class MaterialsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create material" do
     assert_difference("Material.count") do
-      post materials_url, params: { material: { color: @material.color, length_per_unit_m: @material.length_per_unit_m, material_type: @material.material_type, name: @material.name, stock_quantity: @material.stock_quantity, stock_unit: @material.stock_unit, yarn_weight_class: @material.yarn_weight_class } }, as: :json
+      post materials_url, params: { material: { color: @material.color, length_per_unit_m: @material.length_per_unit_m, supply_type: @material.supply_type, name: @material.name, stock_quantity: @material.stock_quantity, stock_unit: @material.stock_unit, yarn_weight_class: @material.yarn_weight_class } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class MaterialsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update material" do
-    patch material_url(@material), params: { material: { color: @material.color, length_per_unit_m: @material.length_per_unit_m, material_type: @material.material_type, name: @material.name, stock_quantity: @material.stock_quantity, stock_unit: @material.stock_unit, yarn_weight_class: @material.yarn_weight_class } }, as: :json
+    patch material_url(@material), params: { material: { color: @material.color, length_per_unit_m: @material.length_per_unit_m, supply_type: @material.supply_type, name: @material.name, stock_quantity: @material.stock_quantity, stock_unit: @material.stock_unit, yarn_weight_class: @material.yarn_weight_class } }, as: :json
     assert_response :success
   end
 

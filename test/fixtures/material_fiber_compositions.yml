@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  material_id: one
-  fiber_type: MyString
-  percentage: 9.99
+  material: one
+  fiber_type: merino_wool
+  percentage: 100.0
 
 two:
-  material_id: two
-  fiber_type: MyString
-  percentage: 9.99
+  material: two
+  fiber_type: cotton
+  percentage: 100.0

@@ -1,7 +1,8 @@
 class Material < ApplicationRecord
-  has_many :material_fiber_compositions
+  has_many :material_fiber_compositions, dependent: :destroy
+  has_many :project_material_requirements, dependent: :destroy
 
-  enum :material_type, FiberfitEnums::FIBER_TYPES, prefix: true, validate: true
+  enum :supply_type, FiberfitEnums::SUPPLY_TYPES, prefix: true, validate: true
   enum :yarn_weight_class, FiberfitEnums::YARN_WEIGHT_CLASSES, prefix: true, validate: { allow_nil: true }
   enum :stock_unit, FiberfitEnums::STOCK_UNITS, prefix: true, validate: true
 end

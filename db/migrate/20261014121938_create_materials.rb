@@ -2,7 +2,7 @@ class CreateMaterials < ActiveRecord::Migration[8.1]
   def change
     create_table :materials do |t|
       t.string :name
-      t.string :material_type
+      t.string :supply_type
       t.string :color
       t.decimal :stock_quantity
       t.string :stock_unit

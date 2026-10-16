@@ -36,7 +36,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_10_14_123856) do
 
   create_table "materials", force: :cascade do |t|
     t.string "name"
-    t.string "material_type"
+    t.string "supply_type"
     t.string "color"
     t.decimal "stock_quantity"
     t.string "stock_unit"

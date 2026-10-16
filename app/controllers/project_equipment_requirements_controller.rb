@@ -46,6 +46,6 @@ class ProjectEquipmentRequirementsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def project_equipment_requirement_params
-      params.expect(project_equipment_requirement: [ :project_id, :material_id, :required_quantity ])
+      params.expect(project_equipment_requirement: [ :project_id, :equipment_id, :required_quantity ])
     end
 end

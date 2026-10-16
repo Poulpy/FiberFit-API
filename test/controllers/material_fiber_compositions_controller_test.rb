@@ -12,7 +12,7 @@ class MaterialFiberCompositionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create material_fiber_composition" do
     assert_difference("MaterialFiberComposition.count") do
-      post material_fiber_compositions_url, params: { material_fiber_composition: { fiber_type: @material_fiber_composition.fiber_type, material_id_id: @material_fiber_composition.material_id_id, percentage: @material_fiber_composition.percentage } }, as: :json
+      post material_fiber_compositions_url, params: { material_fiber_composition: { fiber_type: @material_fiber_composition.fiber_type, material_id: @material_fiber_composition.material_id, percentage: @material_fiber_composition.percentage } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class MaterialFiberCompositionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update material_fiber_composition" do
-    patch material_fiber_composition_url(@material_fiber_composition), params: { material_fiber_composition: { fiber_type: @material_fiber_composition.fiber_type, material_id_id: @material_fiber_composition.material_id_id, percentage: @material_fiber_composition.percentage } }, as: :json
+    patch material_fiber_composition_url(@material_fiber_composition), params: { material_fiber_composition: { fiber_type: @material_fiber_composition.fiber_type, material_id: @material_fiber_composition.material_id, percentage: @material_fiber_composition.percentage } }, as: :json
     assert_response :success
   end
 

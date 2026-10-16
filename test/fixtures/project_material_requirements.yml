@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  project_id: one
-  material_id: one
-  required_quantity: 9.99
-  required_unit: 9.99
+  project: one
+  material: one
+  required_quantity: 2.0
+  required_unit: m
 
 two:
-  project_id: two
-  material_id: two
-  required_quantity: 9.99
-  required_unit: 9.99
+  project: two
+  material: two
+  required_quantity: 1.0
+  required_unit: m
