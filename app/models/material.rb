@@ -5,4 +5,6 @@ class Material < ApplicationRecord
   enum :supply_type, FiberfitEnums::SUPPLY_TYPES, prefix: true, validate: true
   enum :yarn_weight_class, FiberfitEnums::YARN_WEIGHT_CLASSES, prefix: true, validate: { allow_nil: true }
   enum :stock_unit, FiberfitEnums::STOCK_UNITS, prefix: true, validate: true
+
+  validates :name, presence: true
 end
