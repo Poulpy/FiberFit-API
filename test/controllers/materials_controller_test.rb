@@ -35,4 +35,48 @@ class MaterialsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response :no_content
   end
+
+  test "index returns all materials as JSON" do
+    skip "À implémenter"
+  end
+
+  test "show returns the requested material as JSON" do
+    skip "À implémenter"
+  end
+
+  test "create returns the created material as JSON" do
+    skip "À implémenter"
+  end
+
+  test "should not create material with invalid parameters" do
+    skip "À implémenter"
+  end
+
+  test "create returns HTTP 422 when validation fails" do
+    skip "À implémenter"
+  end
+
+  test "create returns validation errors as JSON" do
+    skip "À implémenter"
+  end
+
+  test "update returns the updated material as JSON" do
+    skip "À implémenter"
+  end
+
+  test "should not update material with invalid parameters" do
+    skip "À implémenter"
+  end
+
+  test "update returns HTTP 422 when validation fails" do
+    skip "À implémenter"
+  end
+
+  test "show returns HTTP 404 for an unknown material" do
+    skip "À implémenter"
+  end
+
+  test "destroy returns HTTP 204" do
+    skip "À implémenter"
+  end
 end
