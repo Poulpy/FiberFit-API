@@ -7,4 +7,8 @@ class Material < ApplicationRecord
   enum :stock_unit, FiberfitEnums::STOCK_UNITS, prefix: true, validate: true
 
   validates :name, presence: true
+  validates :stock_quantity, comparison: { greater_than_or_equal_to: 0 }
+  validates :length_per_unit_m,
+    comparison: { greater_than_or_equal_to: 0 },
+    allow_nil: true
 end
